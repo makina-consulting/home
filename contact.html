@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makina Consulting - Contact</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000; /* Black background */
+            color: #ffffff; /* White text for contrast */
+        }
+        /* Custom class for smooth, dark technical aesthetic */
+        .tech-card {
+            background-color: #2a2a2a; /* Slightly lighter dark for cards */
+            border: 1px solid #444444;
+            transition: all 0.3s ease;
+        }
+        .tech-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        /* Primary accent color - vibrant blue */
+        .color-primary {
+            color: #007bff; /* Bright Blue */
+        }
+        .bg-primary {
+            background-color: #007bff;
+        }
+        /* Style for input fields in dark theme */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            background-color: #333333;
+            color: #ffffff;
+            border-color: #555555;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="text-white">
+
+    <!-- Header / Navigation (Smaller Logo and Header) -->
+    <header class="bg-black shadow-lg">
+        <!-- Reduced header height to h-40 -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-40">
+            <a href="index.html" class="flex-shrink-0">
+                <!-- Reduced logo size to h-32 (50% of original) -->
+                <img src="Makina-Logo-Black-Background-1500x600.png" alt="Makina Consulting Logo" class="h-32 w-auto" style="max-height: 128px;">
+            </a>
+            <nav class="hidden md:flex space-x-8 text-gray-300 font-medium">
+                <a href="services.html" class="hover:color-primary transition duration-150 ease-in-out">Services</a>
+                <!-- Active Link Styling -->
+                <a href="contact.html" class="color-primary transition duration-150 ease-in-out">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content Shifted Up to account for smaller header -->
+    <main>
+
+        <!-- 4. Contact Section -->
+        <section class="py-16 sm:py-24 bg-black">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h3 class="text-4xl font-bold text-white mb-3">Get in Touch</h3>
+                    <p class="text-xl text-gray-300">
+                        Let's discuss how Makina Consulting can accelerate your silicon project.
+                    </p>
+                </div>
+
+                <div class="max-w-4xl mx-auto bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <!-- Contact Information -->
+                        <div>
+                            <h4 class="text-2xl font-semibold color-primary mb-4">Contact Details</h4>
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <svg class="w-6 h-6 mr-3 color-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                    <p class="text-white font-medium">Email:</p>
+                                    <p class="ml-2 text-gray-400"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="690a06071d080a1d290408020007080a06071a1c051d00070e470a0604">[email&#160;protected]</a></p>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-6 h-6 mr-3 color-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                    <p class="text-white font-medium">Phone (Japan):</p>
+                                    <p class="ml-2 text-gray-400">+81 3-xxxx-xxxx</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <svg class="w-6 h-6 mr-3 mt-1 color-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                    <p class="text-white font-medium">Location:</p>
+                                    <p class="ml-2 text-gray-400">Minato City, Tokyo, Japan</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Simple Contact Form (Placeholder) -->
+                        <div>
+                            <h4 class="text-2xl font-semibold color-primary mb-4">Inquiry Form</h4>
+                            <form action="#" method="POST" class="space-y-4">
+                                <input type="text" placeholder="Your Name (会社名 / 担当者名)" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                                <input type="email" placeholder="Work Email" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                                <textarea placeholder="Project Summary or Inquiry Details" rows="4" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary"></textarea>
+                                <button type="submit" class="w-full bg-primary text-white font-semibold py-3 rounded-lg shadow-md hover:bg-blue-600 transition duration-300">
+                                    Send Inquiry
+                                </button>
+                                <p class="text-sm text-gray-400 text-center">We respect your privacy. All inquiries are strictly confidential.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h5 class="text-lg font-bold mb-2">Makina Consulting</h5>
+            <p class="text-sm text-gray-500">&copy; 2024 Makina Consulting. All rights reserved.</p>
+            <p class="text-xs text-gray-600 mt-2">Specializing in Physical Design, CAD Automation, and Tapeout Support.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

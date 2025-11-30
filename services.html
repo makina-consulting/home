@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makina Consulting - Services</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000; /* Black background */
+            color: #ffffff; /* White text for contrast */
+            overflow-y: scroll;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE and Edge */
+        }
+        body::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+        /* Custom class for smooth, dark technical aesthetic */
+        .tech-card {
+            background-color: #2a2a2a; /* Slightly lighter dark for cards */
+            border: 1px solid #444444;
+            transition: all 0.3s ease;
+        }
+        .tech-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        /* Primary accent color - vibrant blue */
+        .color-primary {
+            color: #007bff; /* Bright Blue */
+        }
+        .bg-primary {
+            background-color: #007bff;
+        }
+        /* Style for input fields in dark theme */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            background-color: #333333;
+            color: #ffffff;
+            border-color: #555555;
+        }
+    </style>
+</head>
+<body class="text-white">
+
+    <!-- Header / Navigation (Smaller Logo and Header) -->
+    <header class="bg-black shadow-lg">
+        <!-- Reduced header height to h-40 -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-40">
+            <a href="index.html" class="flex-shrink-0">
+                <!-- Reduced logo size to h-32 (50% of original) -->
+                <img src="Makina-Logo-Black-Background-1500x600.png" alt="Makina Consulting Logo" class="h-32 w-auto" style="max-height: 128px;">
+            </a>
+            <nav class="hidden md:flex space-x-8 text-gray-300 font-medium">
+                <!-- Active Link Styling -->
+                <a href="services.html" class="color-primary transition duration-150 ease-in-out">Services</a>
+                <a href="contact.html" class="hover:color-primary transition duration-150 ease-in-out">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content Shifted Up to account for smaller header -->
+    <main>
+
+        <!-- 2. Services Section -->
+        <section class="py-16 sm:py-24 bg-black">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-4xl font-bold text-center color-primary mb-3">Our Core Services</h3>
+                <p class="text-xl text-center text-gray-300 mb-16">
+                    Deep expertise across the entire semiconductor product lifecycle.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Service Card 1: Physical Design -->
+                    <div class="tech-card p-6 rounded-xl shadow-md">
+                        <div class="text-3xl color-primary mb-4">
+                            <!-- SVG Icon for Chip Design --><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-3">Physical Design</h4>
+                        <p class="text-gray-400">
+                            From block-level implementation to top-level integration, we optimize PPA (Power, Performance, Area) for critical projects using cutting-edge techniques.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 2: Methodologies -->
+                    <div class="tech-card p-6 rounded-xl shadow-md">
+                        <div class="text-3xl color-primary mb-4">
+                            <!-- SVG Icon for Methodology --><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.222.036 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-3">Design Methodologies</h4>
+                        <p class="text-gray-400">
+                            Developing robust, repeatable, and scalable design methodologies tailored to your internal team and technological requirements.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 3: CAD Automation -->
+                    <div class="tech-card p-6 rounded-xl shadow-md">
+                        <div class="text-3xl color-primary mb-4">
+                            <!-- SVG Icon for Automation --><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-3">CAD Automation</h4>
+                        <p class="text-gray-400">
+                            Automating complex tool flows and repetitive tasks using Perl, Python, and Tcl to maximize engineering efficiency and reduce human error.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 4: Flow Development -->
+                    <div class="tech-card p-6 rounded-xl shadow-md">
+                        <div class="text-3xl color-primary mb-4">
+                            <!-- SVG Icon for Flow Development --><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h10m-2 5h-6m4-5v-5h2v5M7 15V5h2v10"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-3">EDA Flow Development</h4>
+                        <p class="text-gray-400">
+                            Creating and optimizing customized Electronic Design Automation (EDA) flows that integrate commercial and proprietary tools seamlessly.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 5: Tapeout Support -->
+                    <div class="tech-card p-6 rounded-xl shadow-md">
+                        <div class="text-3xl color-primary mb-4">
+                            <!-- SVG Icon for Tapeout --><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2h-1a2 2 0 00-2 2v2M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-3">Tapeout Readiness</h4>
+                        <p class="text-gray-400">
+                            Comprehensive final checks, sign-off verification, and technical liaison support to ensure a smooth, error-free transition to manufacturing.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 6: Partnering -->
+                    <div class="tech-card p-6 rounded-xl shadow-md border-primary border-2">
+                        <div class="text-3xl color-primary mb-4">
+                            <!-- SVG Icon for Partnership --><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m0 0v-2a3 3 0 014-2.5m6 2.5a4 4 0 00-4-4H9a4 4 0 00-4 4M7 20h10M9 7h6m-3 0h3m-3 0V4"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-3">Local Support & Training</h4>
+                        <p class="text-gray-400">
+                            Providing flexible, on-the-ground support and training specifically tailored to the operational needs and language of Japanese engineering teams.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h5 class="text-lg font-bold mb-2">Makina Consulting</h5>
+            <p class="text-sm text-gray-500">&copy; 2024 Makina Consulting. All rights reserved.</p>
+            <p class="text-xs text-gray-600 mt-2">Specializing in Physical Design, CAD Automation, and Tapeout Support.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

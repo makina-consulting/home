@@ -1,2 +1,1 @@
-# home
-Home page for Makina Consulting
+# makina-consulting-homepage

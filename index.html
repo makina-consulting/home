@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makina Consulting - Home</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a; /* Dark background */
+            color: #ffffff; /* White text for contrast */
+            height: 100vh; /* Set body height to full viewport */
+            overflow: hidden; /* Prevent scrolling */
+        }
+        /* Custom class for smooth, dark technical aesthetic */
+        .tech-card {
+            background-color: #2a2a2a; /* Slightly lighter dark for cards */
+            border: 1px solid #444444;
+            transition: all 0.3s ease;
+        }
+        .tech-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        /* Primary accent color - vibrant blue */
+        .color-primary {
+            color: #007bff; /* Bright Blue */
+        }
+        .bg-primary {
+            background-color: #007bff;
+        }
+        /* Style for input fields in dark theme */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            background-color: #333333;
+            color: #ffffff;
+            border-color: #555555;
+        }
+    </style>
+</head>
+<body class="text-white">
+
+    <!-- Fixed Header / Navigation (Large Logo) --><header class="fixed top-0 left-0 right-0 z-50 bg-black shadow-lg backdrop-blur-md bg-opacity-90">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-80">
+            <a href="index.html" class="flex-shrink-0">
+                <img src="Makina-Logo-Black-Background-1500x600.png" alt="Makina Consulting Logo" class="h-64 w-auto" style="max-height: 256px;">
+            </a>
+            <nav class="hidden md:flex space-x-8 text-gray-300 font-medium">
+                <a href="services.html" class="hover:color-primary transition duration-150 ease-in-out">Services</a>
+                <a href="contact.html" class="hover:color-primary transition duration-150 ease-in-out">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-80 h-full">
+
+        <!-- 1. Hero Section (Introduction) -->
+        <!-- Reduced vertical padding (py-24 to py-10) to ensure the content fits within the remaining 100vh height -->
+        <section class="relative bg-black text-white py-10 sm:py-16 overflow-hidden h-full">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <h2 class="text-4xl sm:text-6xl font-extrabold leading-tight tracking-tighter mb-4">
+                    Silicon Engineering Excellence in Tokyo.
+                </h2>
+                <p class="text-2xl sm:text-4xl font-light text-gray-300 mb-8">
+                    東京発、次世代シリコン開発を加速させる専門コンサルティング。
+                </p>
+                <p class="max-w-3xl text-lg text-gray-400 mb-10">
+                    Makina Consulting is your local partner for advanced semiconductor design enablement. We specialize in physical design, flow automation, and tapeout readiness, ensuring Japanese companies achieve first-pass success.
+                </p>
+                <a href="contact.html" class="inline-flex items-center px-8 py-3 text-lg font-semibold rounded-full bg-primary text-white shadow-xl hover:bg-blue-600 transition duration-300 transform hover:scale-[1.02]">
+                    Start a Conversation
+                </a>
+            </div>
+            <!-- Background element for visual interest --><div class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-color-gray-900)_0%,_var(--tw-color-gray-800)_100%)]"></div>
+        </section>
+
+    </main>
+
+    <!-- Footer --><footer class="bg-black text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h5 class="text-lg font-bold mb-2">Makina Consulting</h5>
+            <p class="text-sm text-gray-500">&copy; 2024 Makina Consulting. All rights reserved.</p>
+            <p class="text-xs text-gray-600 mt-2">Specializing in Physical Design, CAD Automation, and Tapeout Support.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
